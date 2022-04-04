@@ -193,18 +193,25 @@ function showSlide(n) {
     currentSlide = n;
     if(currentSlide === 0){
       previousButton.style.display = 'none';
+      restartButton.style.display = 'none';
     }
     else{
       previousButton.style.display = 'inline-block';
     }
     if(currentSlide === slides.length-1){
       nextButton.style.display = 'none';
+      previousButton.style.display = 'none';
+      restartButton.style.display = 'inline-block';
       submitButton.style.display = 'inline-block';
     }
     else{
       nextButton.style.display = 'inline-block';
       submitButton.style.display = 'none';
     }
+  }
+
+  function restartSlide() {
+    showSlide(newSlide = 0);
   }
 
   function showNextSlide() {
@@ -223,7 +230,9 @@ buildQuiz();
 
 const previousButton = document.getElementById("previous");
 const nextButton = document.getElementById("next");
+const restartButton = document.getElementById("restart");
 const slides = document.querySelectorAll(".slide");
+
 let currentSlide = 0;
 
 showSlide(currentSlide);
@@ -232,6 +241,7 @@ showSlide(currentSlide);
 submitButton.addEventListener('mouseover', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
+restartButton.addEventListener("click", restartSlide)
 
 
 
