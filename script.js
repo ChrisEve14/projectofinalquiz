@@ -233,3 +233,37 @@ submitButton.addEventListener('mouseover', showResults);
 previousButton.addEventListener("click", showPreviousSlide);
 nextButton.addEventListener("click", showNextSlide);
 
+
+
+//fetch
+
+async function getChars() {
+  const URL = '/data/data.json'
+  const res = await fetch(URL)
+  const data = await res.json()
+  console.log(data);
+
+  data.forEach(e => {
+    console.log(e.title);
+})
+
+
+  let datos = {
+    'images': [
+    {'imageUrl': "/images/willow.jpg"},
+    {'imageUrl': "/images/hazel.png"},
+    {'imageUrl': "/images/juniper.jpg"}]
+  }
+
+  datos.images.forEach( function (obj) {
+    let img = new Image()
+    img.src = obj.imageUrl;
+    img.setAttribute( 'id', 'imagen')
+    img.setAttribute( 'height', '200px')
+    document.getElementById('qz').appendChild(img)
+  })
+
+}
+
+getChars()
+

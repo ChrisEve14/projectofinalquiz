@@ -1,0 +1,22 @@
+[   
+    {
+        "id": 1,
+        "title": "Willow Roderick",
+        "description": "Older sister",
+        "imageUrl": "/images/willow.jpg"
+    },
+
+    {
+        "id": 2,
+        "title": "Hazel Roderick",
+        "description": "Middle sister",
+        "imageUrl": "/images/hazel.png"
+    },
+
+    {
+        "id": 3,
+        "title": "Juniper Roderick",
+        "description": "Younger sister",
+        "imageUrl": "/images/juniper.jpg"
+    }
+]
