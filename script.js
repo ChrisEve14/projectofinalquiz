@@ -238,7 +238,7 @@ nextButton.addEventListener("click", showNextSlide);
 //fetch
 
 async function getChars() {
-  const URL = '/data/data.json'
+  const URL = '/data.json'
   const res = await fetch(URL)
   const data = await res.json()
   console.log(data);
