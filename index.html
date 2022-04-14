@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="index.css">
-    <title>Document</title>
+    <title>Quiz</title>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </head>
+
 <body>
 
     <h1>Which 'Cove Haven' Character Are You?</h1>
@@ -17,18 +19,79 @@
     </div>
 
     <div class="quiz-container">
-        <div id="quiz"></div>
-      </div>
-      <button id="previous">Previous Question</button>
-      <button id="next">Next Question</button>
-      <button id="restart">Restart</button>
-      <button id="submit">Submit Quiz</button>
-      <div id="results"></div>
+        <form id="form1">
+            <div class="slide" id="quiz">
+                <div class="question" id="q1">
+                    <p>Choose your favorite season:</p>
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="season" id="winter" value="willow" />Winter</label>
+                    <label><input type="radio" name="season" id="summer" value="june" />Summer</label>
+                    <label><input type="radio" name="season" id="spring" value="hazel" />Spring</label>
+                    <label><input type="radio" name="season" id="fall" value="hazel" />Fall</label>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="question" id="q2">
+                    <p>Pick a color:</p>
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="color" id="red" value="june" />Blue</label>
+                    <label><input type="radio" name="color" id="blue" value="hazel" />Red</label>
+                    <label><input type="radio" name="color" id="yellow" value="willow" />Yellow</label>
+                    <label><input type="radio" name="color" id="green" value="hazel" />Green</label>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="question" id="q3">
+                    <p>Choose an item:</p>
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="item" id="guitar" value="hazel" />Candy</label>
+                    <label><input type="radio" name="item" id="painting" value="willow" />A painting</label>
+                    <label><input type="radio" name="item" id="car" value="willow" />A Car</label>
+                    <label><input type="radio" name="item" id="candy" value="june" />A Guitar</label>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="question" id="q4">
+                    <p>Choose a Drink:</p>
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="drink" id="coffee" value="willow" />Coffee</label>
+                    <label><input type="radio" name="drink" id="margarita" value="june" />Margarita</label>
+                    <label><input type="radio" name="drink" id="wine" value="hazel" />Red Wine</label>
+                    <label><input type="radio" name="drink" id="smoothie" value="willow" />Smoothie</label>
+                </div>
+            </div>
+            <div class="slide">
+                <div class="question" id="q5">
+                    <p>Pick a word, any word:</p>
+                </div>
+                <div class="answers">
+                    <label><input type="radio" name="flowers" id="leilani" value="hazel" />Leilani</label>
+                    <label><input type="radio" name="flowers" id="ivy" value="june" />Ivy</label>
+                    <label><input type="radio" name="flowers" id="magnolia" value="willow" />Magnolia</label>
+                    <label><input type="radio" name="flowers" id="poppy" value="june" />Poppy</label>
+                </div>
+            </div>
 
-      <div id="qz">
-        
-      </div>
+        </form>
+
+    </div>
+
+    <button id="previous">Previous Question</button>
+    <button id="next">Next Question</button>
+    <button id="restart">Restart</button>
+    <button id="submit">Submit Quiz</button>
+
+
+    <div id="results"></div>
+
+    <div id="qz"></div>
 
     <script src="script.js"></script>
+
 </body>
+
 </html>
