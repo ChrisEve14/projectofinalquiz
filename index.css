@@ -1,39 +1,20 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
-body{
-	font-size: 20px;
-	font-family: 'Work Sans', sans-serif;
-	color:white;
+body {
+  font-size: 20px;
+  font-family: 'Work Sans', sans-serif;
+  color: white;
   font-weight: 300;
   text-align: center;
-  /* background-color:oldlace; */
-  /* background-image: radial-gradient(lightskyblue,lightblue, lightsteelblue, navy); */
-  /* background-image: url(images/cove\ haven.png);
-  background-repeat: no-repeat;
-  background-position: center;
-   */
-}
-.background{
-  width: 100%;
-  height: auto;
-  display: block;
-  position: relative;
-}
-.background img {
-  content: "";
-  background: url(images/cove\ haven.png);
-  opacity: 0.3;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
-  position: absolute;
-  z-index: -1; 
-  width: 100%;
-  height: auto;
+  background-color: black;
 }
 
-h1{
+/* .background img {
+  width: 450px;
+} */
+
+
+h1 {
   font-weight: 300;
   margin: 0px;
   padding: 10px;
@@ -41,58 +22,72 @@ h1{
   background-color: black;
   color: #fff;
 }
-.question{
+
+.question {
   font-size: 40px;
   margin-bottom: 10px;
 }
+
 .answers {
   margin-bottom: 30px;
   text-align: left;
   display: inline-block;
 }
-.answers label{
+
+.answers label {
   display: block;
   margin-bottom: 10px;
 }
-button{
+
+button {
   font-family: 'Work Sans', sans-serif;
-	font-size: 22px;
-	background-color: #279;
-	color: #fff;
-	border: 0px;
-	border-radius: 3px;
-	padding: 20px;
-	cursor: pointer;
-	margin-bottom: 20px;
-}
-button:hover{
-	background-color: #38a;
+  font-size: 22px;
+  background-color:#ad62ad;
+  color: #fff;
+  border: 0px;
+  border-radius: 3px;
+  padding: 20px;
+  cursor: pointer;
+  margin-bottom: 20px;
 }
 
+button:hover {
+  background-color: plum;
+}
 
-.slide{
-    position: absolute;
-    left: 0px;
-    top: 0px;
-    width: 100%;
-    z-index: 1;
-    opacity: 0;
-    transition: opacity 0.5s;
-  }
-  .active-slide{
-    opacity: 1;
-    z-index: 2;
-  }
-  .quiz-container{
-    position: relative;
-    height: 300px;
-    margin-top: 40px;
-    margin: 30px;
-    background-color:black;
-    border: 1px solid black;
-    opacity: 0.6;
-  }
 
-  #qz img{
-    padding: 20px;
+.slide {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+.active-slide {
+  opacity: 1;
+  z-index: 2;
+}
+
+.quiz-container {
+  position: relative;
+  height: 300px;
+  margin-top: 40px;
+  margin: 30px;
+  background-color: black;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+
+#qz img {
+  padding: 20px;
+}
+
+
+/* @media screen and (max-width: 500px) {
+  .background img {
+    width: 300px;
   }
+}  */

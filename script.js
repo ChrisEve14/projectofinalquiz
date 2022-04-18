@@ -183,6 +183,7 @@ async function getChars() {
         img.src = obj.imageUrl;
         img.setAttribute('id', 'imagen')
         img.setAttribute('height', '250px')
+        img.setAttribute('width', 'auto')
         img.style.opacity = 0.6
         img.onmouseout = () => {
             img.style.opacity = 0.6
