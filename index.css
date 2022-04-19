@@ -1,8 +1,8 @@
 @import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
 
 body {
-  font-size: 20px;
-  font-family: 'Work Sans', sans-serif;
+  font-size: 25px;
+  font-family: 'Indie Flower', cursive;
   color: white;
   font-weight: 300;
   text-align: center;
@@ -15,6 +15,7 @@ body {
 
 
 h1 {
+  font-family:  'Rubik Moonrocks', cursive;
   font-weight: 300;
   margin: 0px;
   padding: 10px;
@@ -40,7 +41,7 @@ h1 {
 }
 
 button {
-  font-family: 'Work Sans', sans-serif;
+  font-family: 'Indie Flower', cursive;
   font-size: 22px;
   background-color:#ad62ad;
   color: #fff;
@@ -86,8 +87,11 @@ button:hover {
 }
 
 
-/* @media screen and (max-width: 500px) {
-  .background img {
-    width: 300px;
+@media screen and (max-width: 565px) {
+  button {
+    margin-top: 40px;
   }
-}  */
+  .quiz-container{
+    margin-bottom: 50px;
+  }
+} 
