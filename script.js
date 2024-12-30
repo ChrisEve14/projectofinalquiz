@@ -73,7 +73,7 @@ function showResults() {
         Swal.fire({
             title: 'Congrats!',
             text: 'You are Willow',
-            imageUrl: 'https://64.media.tumblr.com/97e12e6afa755ee09ca87b89526dd9a5/a634737d40c74cdd-fa/s1280x1920/960114ef1b281ba52abd3190efe1c7cc9d66e31a.jpg',
+            'imageUrl': "/images/willow.jpg",
             imageHeight: 300,
             imageAlt: 'Willow',
         })
@@ -81,7 +81,7 @@ function showResults() {
         Swal.fire({
             title: 'Congrats!',
             text: 'You are Hazel',
-            imageUrl: 'https://glittermagazine.co/wp-content/uploads/2020/10/cfb2b2457305f5e6afe3023a9cc3879c.png',
+            'imageUrl': "/images/hazel.png",
             imageHeight: 300,
             imageAlt: 'Hazel',
         })
@@ -89,7 +89,7 @@ function showResults() {
         Swal.fire({
             title: 'Congrats!',
             text: 'You are Juniper',
-            imageUrl: 'https://64.media.tumblr.com/15c5027619150ba2e645f6e019813134/tumblr_pk4hn4cgfB1slaih9_1280.jpg',
+            'imageUrl': "/images/juniper.jpg",
             imageHeight: 300,
             imageAlt: 'Juniper',
         })
